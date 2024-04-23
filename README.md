@@ -1,40 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Frontend Coding Test
 
-## Getting Started
+- Create simple crud contact apps for Web, Android or iOS (choose 1 based on your
+expertise) (Point 30).
+- Using redux for state management would be nice. (Point 10).
+- Use this API https://contact.herokuapp.com/contact, read the documentation here:
+https://contact.herokuapp.com/documentation
+- Because we will work with UI, please give us your best UI design. (Point 10)
+- Send us back your apps result (Point 10)
+o for android .apk file
+o for iOS .app file
+o for web deploy your app
+- Using git repository (Point 10)
+- Adding unit test is a must. (Point 10)
 
-First, run the development server:
+framework to use:
+- Android: native / react-native
+- iOS: native / react-native
+- Web: react
+please send us your coding result by 2 days after you get the email.
+Good luck!!
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+// 20240423052639
+// https://contact.herokuapp.com/contact
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+{
+  "message": "Get contacts",
+  "data": [
+    {
+      "id": "93ad6070-c92b-11e8-b02f-cbfa15db428b",
+      "firstName": "Bilbo",
+      "lastName": "Baggins",
+      "age": 111,
+      "photo": "http://vignette1.wikia.nocookie.net/lotr/images/6/68/Bilbo_baggins.jpg/revision/latest?cb=20130202022550"
+    },
+    {
+      "id": "b3abd640-c92b-11e8-b02f-cbfa15db428b",
+      "firstName": "Luke",
+      "lastName": "Skywalker",
+      "age": 20,
+      "photo": "N/A"
+    },
+    {
+      "firstName": "Bilboooo",
+      "lastName": "Bagginsda",
+      "age": 88,
+      "photo": "http://vignette1.wikia.nocookie.net/lotr/images/6/68/Bilbo_baggins.jpg/revision/latest?cb=20130202022550",
+      "id": "f3486bf0-0053-11ef-b49a-bb301028b3c7"
+    }
+  ]
+}
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Contact Service API Documentation
+contactShow/HideList OperationsExpand Operations
+GET /contactGet all contact
+POST /contactSave contact
+DELETE /contact/{id}Delete Contact
+GET /contact/{id}Get Contact by id
+PUT /contact/{id}Edit Contact
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
